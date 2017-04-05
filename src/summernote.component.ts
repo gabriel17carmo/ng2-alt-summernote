@@ -9,13 +9,12 @@ import {
     Output,
     EventEmitter,
     OnDestroy,
-    OnInit,
-    SecurityContext
+    OnInit
 } from '@angular/core';
 
 import {
-    NG_VALUE_ACCESSOR
-    , ControlValueAccessor
+    NG_VALUE_ACCESSOR,
+    ControlValueAccessor
 } from '@angular/forms';
 
 const SUMMERNOTE_VALUE_ACCESSOR = {
