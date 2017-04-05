@@ -19,10 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/summernote/dist/summernote.css",
         "styles.css"
       ],
       "scripts": [
-        "vendor.ts"
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/summernote/dist/summernote.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -14,7 +14,7 @@ import {SummernoteModule} from "../../../src/summernote.module";
     BrowserModule,
     FormsModule,
     HttpModule,
-    SummernoteModule //https://github.com/angular/angular/issues/15767
+    SummernoteModule //Compiling issue. https://github.com/angular/angular/issues/15767
   ],
   providers: [],
   bootstrap: [AppComponent]

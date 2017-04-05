@@ -1,5 +1,7 @@
 /// <reference path="../summernote.d.ts" />
-import * as $ from 'jquery';
+
+//import * as $ from 'jquery'; // old code. doesn't work
+declare let $: any;
 
 import {
     Component,
@@ -105,7 +107,7 @@ export class SummernoteComponent implements OnInit, OnDestroy, ControlValueAcces
     }
 
     private refreshEmpty() {
-        this.empty=<boolean>(<any>$(this.element.nativeElement).find('.summernote').summernote('isEmpty'));
+        this.empty = <boolean>(<any>$(this.element.nativeElement).find('.summernote').summernote('isEmpty'));
     }
 
     ngOnInit() {

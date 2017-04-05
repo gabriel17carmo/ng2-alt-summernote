@@ -1,6 +1,6 @@
 {
   "name": "ng2-summernote-angular4",
-  "version": "0.1.28",
+  "version": "0.1.29",
   "description": "Summernote component for Angular4",
   "main": "ng2-summernote-angular4.js",
   "keywords": [
@@ -16,6 +16,10 @@
   "scripts": {
     "prepublish": "tsc"
   },
+  "typings": [
+    "./summernote.d.ts",
+    "./ng2-summernote-angular4.d.ts"
+  ],
   "types": [
     "./summernote.d.ts",
     "./ng2-summernote-angular4.d.ts"
@@ -23,7 +27,7 @@
   "author": "Val Rudi",
   "license": "MIT",
   "dependencies": {
-    "jquery": "3.1.1",
+    "jquery": "3.2.1",
     "@angular/common": "^4.0.1",
     "@angular/compiler": "^4.0.1",
     "@angular/core": "^4.0.1",
