@@ -1,8 +1,8 @@
 {
-  "name": "ng2-alt-summernote",
+  "name": "ng2-summernote-angular4",
   "version": "0.1.28",
-  "description": "Summernote component for Angular2",
-  "main": "ng2-alt-summernote.js",
+  "description": "Summernote component for Angular4",
+  "main": "ng2-summernote-angular4.js",
   "keywords": [
     "angular2",
     "summernote",
@@ -11,30 +11,32 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/carlescs/ng2-alt-summernote.git"
+    "url": "https://github.com/vrudikov/ng2-alt-summernote.git"
   },
   "scripts": {
     "prepublish": "tsc"
   },
   "types": [
     "./summernote.d.ts",
-    "./ng2-alt-summernote.d.ts"
+    "./ng2-summernote-angular4.d.ts"
   ],
-  "author": "Carles Company Soler",
+  "author": "Val Rudi",
   "license": "MIT",
   "dependencies": {
     "jquery": "3.1.1",
-    "@angular/common": "^2.4.1",
-    "@angular/compiler": "^2.4.1",
-    "@angular/core": "^2.4.1",
-    "@angular/forms": "^2.4.1",
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@types/jquery": "^2.0.41",
+    "@types/core-js": "^0.9.41",
     "core-js": "^2.4.1",
-    "@types/jquery": "^2.0.34",
-    "@types/core-js": "^0.9.35",
-
-    "bootstrap":"^3.3.7",
-    "summernote": "^0.8.2",
-    "codemirror": "^5.22.2"
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.5",
+    "bootstrap": "^3.3.7",
+    "summernote": "^0.8.3",
+    "codemirror": "^5.25.0"
   },
   "devDependencies": {}
 }

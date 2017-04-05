@@ -3,7 +3,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "inlineSources": true,
-    "target": "es5",
+    "target": "es6",
     "declaration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -13,6 +13,6 @@
     "node_modules"
   ],
   "files": [
-    "ng2-alt-summernote.ts"
+    "ng2-summernote-angular4.ts"
   ]
 }
