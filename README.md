@@ -1,12 +1,10 @@
 # ng2-alt-summernote
 
-Component to use [Summernote](http://summernote.org/) in Angular 2.
+Component to use [Summernote](http://summernote.org/) in Angular 4.
 
 Example:
 --------
-[Example](https://carlescs.github.io/testangular/)
-
-The example repo is located [here](https://github.com/carlescs/testangular).
+Provided in "showcase" folder
 
 Usage with Angular CLI:
 -----------------------
