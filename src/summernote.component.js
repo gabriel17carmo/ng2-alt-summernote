@@ -90,6 +90,9 @@ let SummernoteComponent = class SummernoteComponent {
         $(this.element.nativeElement).find('.summernote').summernote('code', code);
         this.refreshEmpty();
     }
+    getCode() {
+        return $(this.element.nativeElement).find('.summernote').summernote('code');
+    }
     registerOnChange(fn) {
         this.onChange = fn;
     }

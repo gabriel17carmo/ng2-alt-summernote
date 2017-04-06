@@ -128,6 +128,10 @@ export class SummernoteComponent implements OnInit, OnDestroy, ControlValueAcces
         this.refreshEmpty();
     }
 
+    getCode(): string {
+        return $(this.element.nativeElement).find('.summernote').summernote('code');
+    }
+
     registerOnChange(fn: any) {
         this.onChange = fn;
     }
