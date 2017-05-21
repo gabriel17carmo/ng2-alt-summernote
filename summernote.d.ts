@@ -171,7 +171,7 @@ interface JQuery {
     summernote(command: string, url: string, filename?: (string | Function)): JQuery;
 
     summernote(command: 'destroy'): JQuery;
-    summernote(command: 'code', markupStr?: string): JQuery;
+    summernote(command: 'code', markupStr?: string): string;
     summernote(command: 'editor.pasteHTML' | 'pasteHTML', markup : string): JQuery;
 
     // Basic API

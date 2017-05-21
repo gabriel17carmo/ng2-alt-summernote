@@ -113,7 +113,7 @@ export class SummernoteComponent implements OnInit, OnDestroy, ControlValueAcces
         let summernote = $(this.element.nativeElement).find('.summernote');
         if (summernote == null)
             return;
-        this.empty = <boolean>(<any>summernote.summernote('isEmpty'))
+        this.empty = <boolean>(<any>summernote.summernote('isEmpty'));
         if (this.whitespaceEmpty)
             this.empty = this.empty || summernote.summernote('code').replace(/(<\/?[^>]+>)|(&nbsp;)/g, "").trim() === '';
     }
