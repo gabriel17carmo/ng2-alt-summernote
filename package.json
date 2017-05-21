@@ -1,44 +1,50 @@
 {
-  "name": "ng2-alt-summernote",
-  "version": "0.1.42",
-  "description": "Summernote component for Angular2",
-  "main": "ng2-alt-summernote.js",
+  "name": "ngx-summernote-angular",
+  "version": "0.1.31",
+  "description": "Summernote component for AngularX",
+  "main": "ngx-summernote-angular.js",
   "keywords": [
     "angular2",
+    "angular4",
+    "angularX",
     "summernote",
     "wysiwyg",
     "html"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/carlescs/ng2-alt-summernote.git"
+    "url": "https://github.com/gabriel17carmo/ng2-alt-summernote.git"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typescript/bin/tsc"
   },
+  "typings": [
+    "./summernote.d.ts",
+    "./ng2-summernote-angularX.d.ts"
+  ],
   "types": [
     "./summernote.d.ts",
-    "./ng2-alt-summernote.d.ts"
+    "./ng2-summernote-angularX.d.ts"
   ],
   "author": "Carles Company Soler",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.1.1",
-    "@angular/common": "^2.4.1",
-    "@angular/compiler": "^2.4.1",
-    "@angular/core": "^2.4.1",
-    "@angular/forms": "^2.4.1",
-    "@angular/platform-browser": "^2.4.1",
+    "jquery": "3.2.1",
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@types/jquery": "^2.0.41",
+    "@types/core-js": "^0.9.41",
     "core-js": "^2.4.1",
-    "@types/jquery": "^2.0.34",
-    "@types/core-js": "0.9.35",
-
-    "bootstrap":"^3.3.7",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.5",
+    "bootstrap": "^3.3.7",
     "summernote": "^0.8.3",
-    "codemirror": "^5.25.0",
-    "rxjs":"^5.3.0"
+    "codemirror": "^5.25.0"
   },
   "devDependencies": {
-    "typescript": "2.2.0"
+    "typescript": "2.3.2"
   }
 }

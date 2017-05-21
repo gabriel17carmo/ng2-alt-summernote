@@ -6,13 +6,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var summernote_component_1 = require("./summernote.component");
-var SummernoteModule = (function () {
-    function SummernoteModule() {
-    }
-    return SummernoteModule;
-}());
+const core_1 = require("@angular/core");
+const summernote_component_1 = require("./summernote.component");
+let SummernoteModule = class SummernoteModule {
+};
 SummernoteModule = __decorate([
     core_1.NgModule({
         declarations: [

@@ -1,12 +1,10 @@
 # ng2-alt-summernote
 
-Component to use [Summernote](http://summernote.org/) in Angular 2.
+Component to use [Summernote](http://summernote.org/) in Angular X.
 
 Example:
 --------
-[Example](https://carlescs.github.io/testangular/)
-
-The example repo is located [here](https://github.com/carlescs/testangular).
+Provided in "showcase" folder
 
 Usage with Angular CLI:
 -----------------------
@@ -22,7 +20,7 @@ To use it with angular-cli:
 
 2. Add styles to `angular-cli.json`:
 
-   ```json 
+   ```json
    "styles": [
       "styles.css",
       "../node_modules/bootstrap/dist/css/bootstrap.min.css",

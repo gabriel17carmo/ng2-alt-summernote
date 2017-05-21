@@ -1,16 +1,15 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from "@angular/core";
 
-import {SummernoteComponent} from './summernote.component';
+import {SummernoteComponent} from "./summernote.component";
 
 @NgModule({
-    declarations:[
+    declarations: [
         SummernoteComponent
     ],
-    exports:[
+    exports: [
         SummernoteComponent
     ]
 })
-export class SummernoteModule{
+export class SummernoteModule {
 
 }

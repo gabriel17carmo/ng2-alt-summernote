@@ -1,5 +1,7 @@
 /// <reference path="../summernote.d.ts" />
-import * as $ from 'jquery';
+
+//import * as $ from 'jquery'; // old code. doesn't work
+declare let $: any;
 
 import {
     Component,
@@ -9,13 +11,12 @@ import {
     Output,
     EventEmitter,
     OnDestroy,
-    OnInit,
-    SecurityContext
+    OnInit
 } from '@angular/core';
 
 import {
-    NG_VALUE_ACCESSOR
-    , ControlValueAccessor
+    NG_VALUE_ACCESSOR,
+    ControlValueAccessor
 } from '@angular/forms';
 
 const SUMMERNOTE_VALUE_ACCESSOR = {
@@ -110,12 +111,7 @@ export class SummernoteComponent implements OnInit, OnDestroy, ControlValueAcces
     }
 
     private refreshEmpty() {
-        let summernote = $(this.element.nativeElement).find('.summernote');
-        if (summernote == null)
-            return;
-        this.empty = <boolean>(<any>summernote.summernote('isEmpty'));
-        if (this.whitespaceEmpty)
-            this.empty = this.empty || summernote.summernote('code').replace(/(<\/?[^>]+>)|(&nbsp;)/g, "").trim() === '';
+        this.empty = <boolean>(<any>$(this.element.nativeElement).find('.summernote').summernote('isEmpty'));
     }
 
     ngOnInit() {
@@ -134,6 +130,10 @@ export class SummernoteComponent implements OnInit, OnDestroy, ControlValueAcces
 
         $(this.element.nativeElement).find('.summernote').summernote('code', code);
         this.refreshEmpty();
+    }
+
+    getCode(): string {
+        return $(this.element.nativeElement).find('.summernote').summernote('code');
     }
 
     registerOnChange(fn: any) {
